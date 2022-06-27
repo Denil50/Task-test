@@ -9,12 +9,15 @@ import UIKit
 
 class BoardView: UIView {
 
-    let ratio: CGFloat = 0.95
+    let ratio: CGFloat = 0.8
     var coordinateX: CGFloat = 0
     var coordinateY: CGFloat = 0
     var sizeCell: CGFloat = 0
     
     var shadowPieces: Set<ChessPiece> = Set<ChessPiece>()
+    var chessDelegate: ChessDelegate? = nil
+    var fromCol = 0
+    var fromRow = 0
     
     override func draw(_ rect: CGRect) {
         coordinateX = bounds.width * (1 - ratio) / 2
@@ -29,9 +32,9 @@ class BoardView: UIView {
         let first = touches.first!
         let fingerLocation = first.location(in: self)
         
-        let fromCol = Int((fingerLocation.x - coordinateX) / sizeCell)
-        let fromRow = Int((fingerLocation.y - coordinateX) / sizeCell)
-        print("FROMx: \(fromCol), y: \(fromRow)")
+        fromCol = Int((fingerLocation.x - coordinateX) / sizeCell)
+        fromRow = Int((fingerLocation.y - coordinateX) / sizeCell)
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -40,7 +43,8 @@ class BoardView: UIView {
         
         let toCol = Int((fingerLocation.x - coordinateX) / sizeCell)
         let toRow = Int((fingerLocation.y - coordinateX) / sizeCell)
-        print("TOx: \(toCol), y: \(toRow)")
+        
+        chessDelegate?.movePiece(fromCol: fromCol, fromRow: fromRow, toCol: toCol, toRow: toRow)
     }
     
 //MARK: -DisplaysImage
