@@ -30,5 +30,9 @@ class ViewController: UIViewController, ChessDelegate  {
         boardView.shadowPieces = chessEngine.pieces
         boardView.setNeedsDisplay()
     }
+    
+    func pieceAt(col: Int, row: Int) -> ChessPiece? {
+        return chessEngine.pieceAt(col: col, row: row)
+    }
 }
 

@@ -12,6 +12,10 @@ struct ChessEngine {
     
     mutating func movePiece(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
         
+        if fromCol == toCol && fromRow == toRow {
+            return
+        }
+        
         guard let candidate = pieceAt(col: fromCol, row: fromRow) else {
             return
         }
