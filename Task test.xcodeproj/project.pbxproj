@@ -20,6 +20,7 @@
 		18E20F5628644C8600C456DD /* Task_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E20F5528644C8600C456DD /* Task_testUITests.swift */; };
 		18E20F5828644C8600C456DD /* Task_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E20F5728644C8600C456DD /* Task_testUITestsLaunchTests.swift */; };
 		18E20F6528644D2E00C456DD /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E20F6428644D2D00C456DD /* BoardView.swift */; };
+		18F4AFC728742C4F005D745A /* gluhoy-stuk.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18F4AFC628742C4F005D745A /* gluhoy-stuk.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		18E20F5528644C8600C456DD /* Task_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_testUITests.swift; sourceTree = "<group>"; };
 		18E20F5728644C8600C456DD /* Task_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18E20F6428644D2D00C456DD /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		18F4AFC628742C4F005D745A /* gluhoy-stuk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gluhoy-stuk.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				18E20F3828644C8400C456DD /* ViewController.swift */,
 				18E20F3A28644C8400C456DD /* Main.storyboard */,
 				18E20F3D28644C8500C456DD /* Assets.xcassets */,
+				18F4AFC628742C4F005D745A /* gluhoy-stuk.wav */,
 				18E20F3F28644C8500C456DD /* LaunchScreen.storyboard */,
 				18E20F4228644C8500C456DD /* Info.plist */,
 			);
@@ -246,6 +249,7 @@
 				18E20F4128644C8500C456DD /* LaunchScreen.storyboard in Resources */,
 				18E20F3E28644C8500C456DD /* Assets.xcassets in Resources */,
 				18E20F3C28644C8400C456DD /* Main.storyboard in Resources */,
+				18F4AFC728742C4F005D745A /* gluhoy-stuk.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
