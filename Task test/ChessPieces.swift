@@ -11,4 +11,5 @@ struct ChessPiece: Hashable {
     var col: Int
     var row: Int
     var imageName: String
+    var isWhite: Bool
 }
